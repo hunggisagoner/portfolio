@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#030303">
+    <title>hunggisagoner's Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav-wrapper animate-on-load">
+        <nav class="navbar">
+            <a href="#" class="brand">hunggisagoner<span>.</span></a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#work">Projects</a>
+                <a href="#connect">Socials</a>
+            </div>
+        </nav>
+    </div>
+
+    <section id="hero">
+        <h1 class="hero-title animate-on-load delay-1">
+            Portfolio of
+            <span>hunggisagoner</span>
+        </h1>
+        <p class="hero-subtitle animate-on-load delay-2">A young developer who programs some silly projects. Probably.</p>
+    </section>
+
+    <section id="work">
+        <h2 class="section-header reveal-on-scroll">Projects</h2>
+        
+        <div class="filter-container reveal-on-scroll">
+            <div class="filter-group">
+                <label><i class="fa-solid fa-cube"></i> Geode Version</label>
+                <div class="custom-select-wrapper" id="wrap-geode">
+                    <select id="filter-geode">
+                        <option value="all">All Versions</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label><i class="fa-solid fa-gamepad"></i> Platform</label>
+                <div class="custom-select-wrapper" id="wrap-platform">
+                    <select id="filter-platform">
+                        <option value="all">All Platforms</option>
+                        <option value="win">Windows</option>
+                        <option value="mac">macOS</option>
+                        <option value="android">Android</option>
+                        <option value="ios">iOS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label><i class="fa-solid fa-tags"></i> Category Tags</label>
+                <div class="custom-select-wrapper" id="wrap-tag">
+                    <select id="filter-tag">
+                        <option value="all">All Tags</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="mod-container" class="project-list reveal-on-scroll">
+            <div class="loading-text"><i class="fa-solid fa-circle-notch fa-spin"></i> Getting datas...</div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <h2 class="section-header reveal-on-scroll">Socials</h2>
+        <div class="social-grid reveal-on-scroll">
+            <a href="https://github.com/hunggisagoner" target="_blank" class="social-card">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="" class="social-card">
+                <i class="fa-brands fa-discord"></i>
+                <span>Discord</span>
+            </a>
+            <a href="https://www.youtube.com/@hunggisreal" target="_blank" class="social-card">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p style="color: var(--muted); font-size: 0.9rem; font-family: 'JetBrains Mono', monospace; margin-bottom: 20px;">This page is open source.</p>
+        <a href="https://github.com/hunggisagoner/portfolio" target="_blank" class="btn-action">
+            <i class="fa-solid fa-code-branch"></i>View source code
+        </a>
+    </footer>
+
+    <div id="cyber-modal-overlay" class="cyber-modal-overlay">
+        <div class="cyber-modal">
+            <div class="modal-content">
+                <i class="fa-solid fa-triangle-exCclamation"></i>
+                <span id="modal-msg">Coming soon. Stay tuned!</span>
+            </div>
+            <button id="modal-ok-btn" class="modal-btn">Acknowledge</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
