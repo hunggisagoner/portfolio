@@ -10,7 +10,7 @@ window.addEventListener('scroll', revealElements);
 window.addEventListener('load', revealElements);
 
 const githubUser = 'hunggisagoner';
-const repositories = ['MenuSplashText', 'GD-Physics', 'gdgpt']; 
+const repositories = ['MenuSplashText', 'GD-Physics', 'gdgpt', 'RobTopSimulator']; 
 const container = document.getElementById('mod-container');
 const targetPlatforms = ['win', 'mac', 'android', 'ios'];
 const platformIcons = { 'win': 'fa-windows', 'mac': 'fa-apple', 'android': 'fa-android', 'ios': 'fa-apple' };
